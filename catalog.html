@@ -3,21 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
-  <body class="body-container">
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="nav-logo" href="index.html"><img class="main-logo" src="#" alt="Логотип Седоны"></a>
-        <ul class="main-list" >
-          <li class="main-item"><a class="button main-button" href="index.html">Главная</a></li>
-          <li class="main-item" ><a class="button about-button" href="#">О Седоне</a></li>
-          <li class="main-item item-light" ><a class="button motels-button" href="#">Гостиницы</a></li>
-        </ul>
-        <button class="button button-search" type="button"><span class="hidden-element">Поиск</span></button>
-        <button class="button button-favorit" ><span class="hidden-element">Избранное</span></button>
-        <a class="order-button" href="#"><span class="order-title">Хочу сюда!</span></a>
-      </nav>
-    </header>
+  <body>
+    <div class="body-container">
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="page-logo" href="index.html"><img class="main-logo" src="/images/logo.svg" width="139" height="70" alt="Логотип Седоны"></a>
+          <ul class="navigation-list">
+            <li class="navigation-item item-light"><a class="navigation-link" href="index.html">Главная</a></li>
+            <li class="navigation-item" ><a class="navigation-link" href="#">О Седоне</a></li>
+            <li class="navigation-item" ><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <button class="button-search" type="button"><span class="hidden-element">Поиск</span></button>
+          <button class="button-favorit" type="button"><span class="hidden-element">Избранное</span></button>
+          <a class="button order-button" href="#"><span class="order-title">Хочу сюда!</span></a>
+        </nav>
+      </header>
     <main class="main-inner">
       <head class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -42,9 +44,7 @@
               <li class="catalog-filter-list">
                 <label class="control"><input class="checkbox-control" name="wi-fi" type="checkbox"><span>Wi-Fi</span></label>
               </li>
-              <li class="catalog-filter-list">
-                <label class="control"><input class="checkbox-control" name="wi-fi" type="checkbox" checked><span>Шлюхи</span></label>
-              </li>
+
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -206,5 +206,6 @@
         <img class="fotter-logo" src="#" alt="логотип html">
       </section>
     </footer>
+    </div>
   </body>
 </html>

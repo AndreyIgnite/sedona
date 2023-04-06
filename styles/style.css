@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSans-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color:#333333;
+  background-color: #E5E5E5;
+  font-family: "PTans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+
+}
+
+.page-header {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.navigation {
+  margin: 0  auto;
+  display: flex;
+  align-items: center;
+  width: 1060px;
+  height: 70px;
+  border: 1px solid rgb(197, 5, 5);
+
+}
+
+.navigation-list {
+  display: flex;
+  width: 345px;
+  border: 1px solid rgb(197, 5, 5);
+  justify-content: space-around;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation-item {
+  border: 1px solid rgb(197, 5, 5);
+
+
+}
+
+.img-container {
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
+  margin-top: -5px;
+  width:  1200px;
+  height: 485px;
+  background-image: url("../images/index-background.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+.index-img {
+
+  margin-top: 51px;
+  margin-left: 371px;
+ }
+
+ .index-div {
+  margin-top: 21px;
+ }
+ .advantages-decsription {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 63px;
+  margin-left: 240px;
+  margin-bottom: 0;
+  width: 720px;
+  height: 72px;
+
+ }
+
+ .advantages-text {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 31px;
+  margin-left: 240px;
+  width: 720px;
+  height: 36px;
+ }
+
+ .container-h2h3 {
+  width: 1200px;
+  height: 282px;
+
+
+ }
+
+ .order-button {
+  margin-left: auto;
+
+ }
+
+
+ .fav-container {
+  display: flex;
+  align-items: center;
+  width: 84px;
+  height: 66px;
+  margin-left: 299px;
+
+ }
+
+ .button {
+  background-color: #756257;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+  height: 37px;
+  padding-top: 15px;
+  text-align: center;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+
+ }
+
+
+ .card {
+  width: 400px;
+  height: 384px;
+  border: 1px solid rgb(5, 34, 197);
+
+ }
+.card-image {
+  width: 800px;
+  height: 384px;
+
+}
+
+.card-title-city {
+  width: 400px;
+  height: 56px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 97px;
+
+}
+
+.card-number {
+
+
+  width: 250px;
+  height: 21px;
+  margin: 30px auto;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+}
+
+.card-title-description-number {
+  width: 220px;
+  height: 63px;
+  margin: 0 auto;
+
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.flex-container {
+  display: flex;
+
+}
+
+.background-blue {
+
+  background-color:#83B3D3;
+}
+
+.background-gray {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #daedfa;
+}
+
+.backgroun-white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+
+}
+
+.card-logo {
+  margin-top: 89px;
+}
+
+.card-title-service {
+  margin-top: 23px;
+}
+
+.card-title-description {
+  width: 250px;
+  height: 73px;
+  margin-top: 20px;
+  border: 1px solid rgb(5, 34, 197);
+}

@@ -3,122 +3,135 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
-  <body class="body-container">
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="nav-logo" href="index.html"><img class="main-logo" src="#" alt="Логотип Седоны"></a>
-        <ul class="main-list" >
-          <li class="main-item item-light"><a class="button main-button" href="index.html">Главная</a></li>
-          <li class="main-item" ><a class="button about-button" href="#">О Седоне</a></li>
-          <li class="main-item" ><a class="button motels-button" href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <button class="button button-search" type="button"><span class="hidden-element">Поиск</span></button>
-        <button class="button button-favorit" ><span class="hidden-element">Избранное</span></button>
-        <a class="order-button" href="#"><span class="order-title" >Хочу сюда!</span></a>
-      </nav>
-    </header>
-    <main class="main-index">
-      <section class="main-image">
+  <body>
+    <div class="body-container">
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="page-logo" href="index.html"><img class="main-logo" src="/images/logo.svg" width="139" height="70" alt="Логотип Седоны"></a>
+          <ul class="navigation-list">
+            <li class="navigation-item item-light"><a class="navigation-link" href="index.html">Главная</a></li>
+            <li class="navigation-item" ><a class="navigation-link" href="#">О Седоне</a></li>
+            <li class="navigation-item" ><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <div class="fav-container">
+            <button class="button-search" type="button"><span class="hidden-element">Поиск</span></button>
+            <button class="button-favorit" type="button"><span class="hidden-element">Избранное</span></button>
+          </div>
+          <a class="button order-button" href="#"><span class="order-title">Хочу сюда!</span></a>
+        </nav>
+        <div class="img-container">
+          <img class="index-img" src="/images/welcome.svg" width="485" height="352">
+          <img class="index-div" src="/images/divider.svg" width="1200" height="57">
+        </div>
+      </header>
+      <main class="main-index">
         <h1 class="hidden-element">Туристический город Седона</h1>
-        <img class="background-image" src="#" alt="Заглавное фоновое изображение">
-        <img class="main-title-image" src="#" alt="Добро пожаловать в каньон Седона">
-      </section>
-      <section class="advantages">
         <h2 class="hidden-element">Преимущества городка Седона</h2>
-        <h3 class="advantages-decsription">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      </section>
-      <section class="service-title">
-        <div class="card backgroun-blue">
-          <h3 class="card-title-city">Настоящий городок</h3>
-          <p class="card-title-description">— №1 —</p>
-          <p class="card-title-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="container-h2h3">
+         <h3 class="advantages-decsription">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+         <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
-        <div class="card-image">
-          <img src="#" alt="Фото Седоны с заведениями">
+
+        <div class="flex-container">
+          <div class="card background-blue">
+            <h3 class="card-title-city">Настоящий <br> городок</h3>
+            <p class="card-number">— №1 —</p>
+            <p class="card-title-description-number">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="card-image">
+            <img src="/images/photo-1.jpg" width="800" height="384" alt="Фото Седоны с заведениями">
+          </div>
         </div>
-        <div class="card backgroun-gray">
-          <img class="card-logo" src="#" alt="Логотип жилья">
-          <h3 class="card-title-service">Жильё</h3>
-          <p class="card-title-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <div class="flex-container">
+          <div class="card background-gray">
+            <img class="card-logo" src="/images/icon-1.svg" alt="Логотип жилья">
+            <h3 class="card-title-service">Жильё</h3>
+            <p class="card-title-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="card backgroun-white">
+            <img class="card-logo" src="/images/icon-2.svg" alt="Логотип еды">
+            <h3 class="card-title-service">Еда</h3>
+            <p class="card-title-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="card background-gray">
+            <img class="card-logo" src="/images/icon-3.svg" alt="Логотип сувенира">
+            <h3 class="card-title-service">Сувениры</h3>
+            <p class="card-title-service-description">Не только китайского, но и настоящего местного производства!</p>
+          </div>
         </div>
-        <div class="card backgroun-white">
-          <img class="card-logo" src="#" alt="Логотип еды">
-          <h3 class="card-title-service">Еда</h3>
-          <p class="card-title-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        <div class="flex-container">
+            <div class="card-image">
+              <img src="/images/photo-2.jpg" alt="Фото моста дьявола">
+            </div>
+            <div class="card background-blue">
+              <h3 class="card-title-city">Там есть мост дьявола</h3>
+              <p class="card-number">— №2 —</p>
+              <p class="card-title-description-number">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
         </div>
-        <div class="card backgroun-gray">
-          <img class="card-logo" src="#" alt="Логотип сувенира">
-          <h3 class="card-title-service">Еда</h3>
-          <p class="card-title-service-description">Не только китайского, но и настоящего местного производства!</p>
+        <div class="flex-container">
+          <div class="card backgroun-gray">
+            <h3 class="card-title-service">Небольшая площадь</h3>
+            <p class="card-title-service-description">— №3 —</p>
+            <p class="card-title-service-description">Не только китайского, но и настоящего местного производства!</p>
+          </div>
+          <div class="card backgroun-green">
+            <h3 class="card-title-service">Красивая дорога</h3>
+            <p class="card-title-service-description">— №4 —</p>
+            <p class="card-title-service-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="card backgroun-gray">
+            <h3 class="card-title-service">Мало туристов</h3>
+            <p class="card-title-service-description">— №5 —</p>
+            <p class="card-title-service-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
-        <div class="card-image">
-          <img src="#" alt="Фото моста дьявола">
-        </div>
-        <div class="card devil-bridge">
-          <h3 class="card-title-city">Там есть мост дьявола</h3>
-          <p class="card-title-description">— №2 —</p>
-          <p class="card-title-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
-        <div class="card backgroun-gray">
-          <h3 class="card-title-service">Небольшая площадь</h3>
-          <p class="card-title-service-description">— №3 —</p>
-          <p class="card-title-service-description">Не только китайского, но и настоящего местного производства!</p>
-        </div>
-        <div class="card backgroun-green">
-          <h3 class="card-title-service">Красивая дорога</h3>
-          <p class="card-title-service-description">— №4 —</p>
-          <p class="card-title-service-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="card backgroun-gray">
-          <h3 class="card-title-service">Мало туристов</h3>
-          <p class="card-title-service-description">— №5 —</p>
-          <p class="card-title-service-description">Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-        <section class="book-hotel">
-          <h2 class="hidden-element">Бронирование гостиницы в Седоне</h2>
-          <h3 class="book-hotel-question">Заинтересовались?</h3>
-          <p class="book-hotel-order" >Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="order-button big-btn-order"  href="#"><span class="button-hotel-search-title">ПОИСК ГОСТИНИЦЫ В седоне</span></a>
+          <section class="book-hotel">
+            <h2 class="hidden-element">Бронирование гостиницы в Седоне</h2>
+            <h3 class="book-hotel-question">Заинтересовались?</h3>
+            <p class="book-hotel-order" >Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="order-button big-btn-order"  href="#"><span class="button-hotel-search-title">Поиск гостиницы в седоне</span></a>
+          </section>
+
+      </main>
+      <footer>
+        <section class="footer-subscribe">
+          <img class="footer-img" src="#" alt="">
+          <h2 class="hidden-element">Подписка на рассылку</h2>
+          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+          <p class="subscribe-about">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="#" method="post">
+            <label"><input class="subscribe-control" type="text" name="e-mail" placeholder="Ваш e-mail"><span class="hidden-element">Форма для подписки</span></label>
+          <button class="button-subscribe" type="submit">Подписаться</button>
+          </form>
         </section>
-      </section>
-    </main>
-    <footer>
-      <section class="footer-subscribe">
-        <img class="footer-img" src="#" alt="">
-        <h2 class="hidden-element">Подписка на рассылку</h2>
-        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-        <p class="subscribe-about">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="#" method="post">
-          <label"><input class="subscribe-control" type="text" name="e-mail" placeholder="Ваш e-mail"><span class="hidden-element">Форма для подписки</span></label>
-        <button class="button-subscribe" type="submit">Подписаться</button>
-        </form>
-      </section>
-      <section class="footer-links">
-        <ul class="footer-links-list">
-          <li class="footer-links-item">
-            <a class="button-footer-link" href="#">
-              <img class="logo-links" src="#" alt="Logo-twitter">
-              <span class="hidden-element">Twitter</span>
-            </a>
-          </li>
-          <li class="footer-links-item">
-            <a class="button-footer-link" href="#">
-              <img class="logo-links" src="#" alt="Logo-fb">
-              <span class="hidden-element">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-links-item">
-            <a class="button-footer-link" href="#">
-              <img class="logo-links" src="#" alt="Logo-youtube">
-              <span class="hidden-element">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <img class="fotter-logo" src="#" alt="логотип html">
-      </section>
-    </footer>
+        <section class="footer-links">
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a class="button-footer-link" href="#">
+                <img class="logo-links" src="#" alt="Logo-twitter">
+                <span class="hidden-element">Twitter</span>
+              </a>
+            </li>
+            <li class="footer-links-item">
+              <a class="button-footer-link" href="#">
+                <img class="logo-links" src="#" alt="Logo-fb">
+                <span class="hidden-element">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-links-item">
+              <a class="button-footer-link" href="#">
+                <img class="logo-links" src="#" alt="Logo-youtube">
+                <span class="hidden-element">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <img class="fotter-logo" src="#" alt="логотип html">
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
