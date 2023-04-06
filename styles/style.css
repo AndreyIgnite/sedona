@@ -160,7 +160,7 @@ body {
  .card {
   width: 400px;
   height: 384px;
-  border: 1px solid rgb(5, 34, 197);
+
 
  }
 .card-image {
@@ -180,12 +180,24 @@ body {
   color: white;
   text-transform: uppercase;
   margin-top: 97px;
+}
+
+.card-title-city-black {
+  width: 400px;
+  height: 56px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  margin-top: 98px;
+  margin-bottom: 0;
 
 }
 
 .card-number {
-
-
   width: 250px;
   height: 21px;
   margin: 30px auto;
@@ -196,14 +208,58 @@ body {
   line-height: 21px;
   text-align: center;
   color: white;
+
+}
+
+.card-number-black {
+  width: 250px;
+  height: 21px;
+  margin: 29px auto;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+
+}
+
+
+.card-logo {
+  margin-top: 89px;
+}
+
+.card-title-service {
+  width: 250px;
+  height: 28px;
+  margin-top: 23px;
+
+  text-align: center;
+}
+
+.card-title-description {
+
+
+}
+
+.card-title-service-description {
+  width: 250px;
+  height: 73px;
+  text-align: center;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto;
+
 }
 
 .card-title-description-number {
   width: 220px;
   height: 63px;
   margin: 0 auto;
-
-
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -215,20 +271,24 @@ body {
 
 .flex-container {
   display: flex;
-
 }
 
 .background-blue {
-
   background-color:#83B3D3;
 }
 
 .background-gray {
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #daedfa;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.backgroun-green {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .backgroun-white {
@@ -236,20 +296,5 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-
 }
 
-.card-logo {
-  margin-top: 89px;
-}
-
-.card-title-service {
-  margin-top: 23px;
-}
-
-.card-title-description {
-  width: 250px;
-  height: 73px;
-  margin-top: 20px;
-  border: 1px solid rgb(5, 34, 197);
-}
