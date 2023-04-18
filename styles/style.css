@@ -41,14 +41,13 @@ body {
   align-items: center;
   width: 1060px;
   height: 70px;
-  border: 1px solid rgb(197, 5, 5);
 
 }
 
 .navigation-list {
   display: flex;
   width: 345px;
-  border: 1px solid rgb(197, 5, 5);
+
   justify-content: space-around;
 }
 
@@ -63,7 +62,7 @@ body {
 }
 
 .navigation-item {
-  border: 1px solid rgb(197, 5, 5);
+
 
 
 }
@@ -71,7 +70,7 @@ body {
 .img-container {
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
-  margin-top: -5px;
+  margin-top: -7px;
   width:  1200px;
   height: 485px;
   background-image: url("../images/index-background.jpg");
@@ -158,6 +157,9 @@ body {
 
 
  .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   height: 384px;
 
@@ -169,7 +171,9 @@ body {
 
 }
 
-.card-title-city {
+.card-title-place {
+  margin-top: 97px;
+  margin-bottom: 0;
   width: 400px;
   height: 56px;
   font-family: "PT Sans", sans-serif;
@@ -177,52 +181,28 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: white;
   text-transform: uppercase;
-  margin-top: 97px;
 }
 
-.card-title-city-black {
-  width: 400px;
-  height: 56px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  margin-top: 98px;
-  margin-bottom: 0;
+.black {
+  color: #333333;
+}
 
+.white {
+  color: rgb(255, 255, 255);
 }
 
 .card-number {
   width: 250px;
   height: 21px;
-  margin: 30px auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
 
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: white;
-
-}
-
-.card-number-black {
-  width: 250px;
-  height: 21px;
-  margin: 29px auto;
-
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-
 }
 
 
@@ -234,38 +214,35 @@ body {
   width: 250px;
   height: 28px;
   margin-top: 23px;
+  margin-bottom: 0px;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-
 }
 
 .card-title-service-description {
   width: 250px;
   height: 73px;
-  text-align: center;
-
+  margin-top: 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0 auto;
-
+  text-align: center;
 }
 
-.card-title-description-number {
-  width: 220px;
-  height: 63px;
-  margin: 0 auto;
+.card-title-place-description {
+  width: 250px;
+  height: 73px;
+  margin-top: 30px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
 }
 
 
@@ -274,27 +251,22 @@ body {
 }
 
 .background-blue {
+
   background-color:#83B3D3;
 }
 
 .background-gray {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .backgroun-green {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .backgroun-white {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   background-color: #ffffff;
 }
 
