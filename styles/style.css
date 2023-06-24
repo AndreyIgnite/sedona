@@ -18,19 +18,16 @@
 
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
-  margin: 0;
-  color: #333333;
-  background-color: #e5e5e5;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.body-container {
   width: 1200px;
   margin: 0 auto;
   background-color: white;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .breadcrums {
@@ -76,9 +73,9 @@ body {
 .navigation {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   width: 1060px;
-  height: 70px;
 }
 
 .page-logo {
@@ -87,9 +84,9 @@ body {
 }
 
 .navigation-list {
+  padding: 10px;
   margin-left: 50px;
   width: 500px;
-  height: 66px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -118,7 +115,6 @@ body {
 
 .img-container-catalog {
   color: #ffffff;
-  margin-top: -7px;
   padding-top: 35px;
   width: 1200px;
   height: 408px;
@@ -382,7 +378,7 @@ body {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  height: 66px;
+  max-width: 100px;
 }
 
 
