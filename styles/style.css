@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -44,6 +45,17 @@ body {
   color: #ffffff;
 }
 
+.invisible-element {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .catalog-filter {
   display: flex;
   width: 1200px;
@@ -58,22 +70,33 @@ body {
 .page-header {
   background-color: #ffffff;
   color: #000000;
+  padding: 0 70px;
 }
 .navigation {
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 1060px;
   height: 70px;
 }
 
+.page-logo {
+  display: block;
+  height: 70px;
+}
+
 .navigation-list {
+  margin-left: 50px;
+  width: 500px;
+  height: 66px;
   display: flex;
-  width: 345px;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -84,7 +107,7 @@ body {
 }
 
 .img-container {
-  margin-top: -7px;
+  margin-top: 0px;
   width: 1200px;
   height: 485px;
   background-image: url("../images/index-background.jpg");
@@ -342,18 +365,29 @@ body {
 }
 
 .order-button {
-  margin-left: auto;
+  display: flex;
+  min-width: 160px;
+  align-self: center;
+  margin-left: 20px;
+  padding: 8px 15px;
+}
+
+.order-title {
+  display: block;
+  text-align: center;
 }
 
 .fav-container {
+  margin-left: auto;
   display: flex;
-  align-items: center;
-  width: 84px;
+  flex-wrap: wrap;
   height: 66px;
-  margin-left: 299px;
 }
 
+
+
 .button {
+  display: block;
   background-color: #756257;
   color: #ffffff;
   text-decoration: none;
@@ -363,6 +397,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
+}
+
+.btn {
+  padding: 0;
+  border: 0;
+  max-height: 66px;
+  max-width: 42px;
+  background-color: #ffffff;
+
 }
 
 .button-container {
