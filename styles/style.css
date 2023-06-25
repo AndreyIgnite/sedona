@@ -14,7 +14,35 @@
   src: url("../fonts/PTSans-Bold.woff") format("woff");
   font-display: swap;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
 
 
 body {
@@ -84,7 +112,6 @@ body {
 }
 
 .navigation-list {
-  padding: 10px;
   margin-left: 50px;
   width: 500px;
   display: flex;
@@ -160,11 +187,11 @@ body {
 }
 
 .hotel-card {
+  display: flex;
+  flex-direction: column;
   width: 340px;
   height: 438px;
   padding: 20px;
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
 }
 
 /* .button-view-slideshow {
@@ -202,7 +229,6 @@ body {
 .hotel-card-title {
   margin-top: 16px;
   margin-bottom: 0px;
-  width: 208;
   height: 31px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
