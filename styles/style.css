@@ -139,12 +139,26 @@ body {
 
 
 .img-container {
-  margin-top: 0px;
-  width: 1200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1198px;
   height: 485px;
   background-image: url("../images/index-background.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+}
+
+.index-img {
+  margin-top: 51px;
+  display: block;
+}
+
+.index-div {
+  margin-top: auto;
+  display: block;
+  align-self: center;
 }
 
 .img-container-catalog {
@@ -205,14 +219,7 @@ body {
 
 } */
 
-.index-img {
-  margin-top: 51px;
-  margin-left: 371px;
-}
 
-.index-div {
-  margin-top: 21px;
-}
 
 .inner-header-title {
   width: 528px;
@@ -362,39 +369,35 @@ body {
   /* outline: 2px solid rgb(0, 0, 0);
   outline-offset: -2px; */
 }
-
+.container-description {
+  width: 1200px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .advantages-decsription {
+  width: 720px;
+  height: 72px;
+  margin-top: 62px;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 63px;
-  margin-left: 240px;
-  margin-bottom: 0;
-  width: 720px;
-  height: 72px;
 }
 
 .advantages-text {
+  margin-top: 31px;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
-  text-align: center;
-  margin-top: 31px;
-  margin-left: 240px;
   width: 720px;
   height: 36px;
 }
-
-.container-h2h3 {
-  width: 1200px;
-  height: 282px;
-}
-
-
 
 
 
@@ -537,9 +540,53 @@ body {
   text-align: center;
 }
 
-.flex-container {
+.flex-container-non {
   display: flex;
 }
+.grid {
+  display: grid;
+  grid-template-areas: "city image-1 image-1"
+                       "house food souvenir"
+                       "image-2 image-2 brige"
+                       "squar road tourism";
+}
+
+.city {
+  grid-area: city;
+}
+.image-1 {
+  grid-area: image-1;
+}
+
+.house {
+  grid-area: house;
+}
+
+.food {
+  grid-area: food;
+}
+.souvenir {
+  grid-area: souvenir;
+}
+.image-2 {
+  grid-area: image-2;
+}
+
+.brige {
+  grid-area: brige;
+}
+.squar {
+  grid-area: squar;
+}
+.road {
+  grid-area: road;
+}
+.tourism {
+  grid-area: tourism;
+}
+
+
+
 
 .background-blue {
   background-color: #83b3d3;
