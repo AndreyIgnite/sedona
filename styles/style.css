@@ -637,6 +637,7 @@ body {
 }
 
 .subscribe {
+  padding-top: 94px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -656,10 +657,10 @@ body {
 }
 
 .subscribe-title {
-  margin-top: 94px;
+
   width: 720px;
   height: 32px;
-
+  margin-bottom: 29px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -669,7 +670,7 @@ body {
 }
 
 .subscribe-about {
-  margin-top: 29px;
+  margin-bottom: 46px;
   width: 720px;
   height: 52px;
   font-family: "PT Sans", sans-serif;
@@ -681,7 +682,6 @@ body {
 
 .subscribe-form {
   display: flex;
-  margin-top: 46px;
 }
 
 .subscribe-control {
