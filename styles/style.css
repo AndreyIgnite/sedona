@@ -637,7 +637,10 @@ body {
   color: #333333;
 }
 
-.footer-subscribe {
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1200px;
   height: 411px;
   background-image: url(../images/background.jpg);
@@ -654,9 +657,9 @@ body {
 }
 
 .subscribe-title {
+  margin-top: 94px;
   width: 720px;
   height: 32px;
-  margin: 0 auto;
 
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -667,16 +670,57 @@ body {
 }
 
 .subscribe-about {
+  margin-top: 29px;
   width: 720px;
   height: 52px;
-  margin: 0 auto;
-  margin-top: 29px;
-
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 46px;
+}
+
+.subscribe-control {
+  width: 559px;
+  height: 60px;
+  padding: 0 19px 0 22px;
+  outline: none;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+  background: var(--basic-light, #F2F2F2);
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.button-subscribe {
+  border: 0;
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--special-cold-light, #83B3D3);
+  color: #F2F2F2;
+  margin-left: -5px;
+
+  text-align: center;
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.subscribe-inner {
+  background: white;
+  color: #000000;
 }
 
 .footer-links {
@@ -712,6 +756,10 @@ body {
 
 .footer-logo {
   align-self: center;
+}
+.logo-links:hover {
+  transition: trasnform 0.1s linear;
+  transform: scale(1.5);
 
 }
 
