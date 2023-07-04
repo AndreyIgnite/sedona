@@ -70,6 +70,7 @@ body {
   color: #ffffff;
 }
 
+
 .invisible-element {
   position: absolute;
   width: 1px;
@@ -681,12 +682,14 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 800px;
+  min-height: 60px;
 }
 
 .subscribe-control {
-  width: 559px;
-  height: 60px;
+
   padding: 0 19px 0 22px;
   outline: none;
   border-radius: 10px 0px 0px 10px;
@@ -701,12 +704,10 @@ body {
 
 .button-subscribe {
   border: 0;
-  width: 200px;
-  height: 60px;
+
   border-radius: 0px 10px 10px 0px;
   background: var(--special-cold-light, #83B3D3);
   color: #F2F2F2;
-  margin-left: -5px;
 
   text-align: center;
   font-size: 20px;
@@ -756,10 +757,13 @@ body {
 .footer-logo {
   align-self: center;
 }
-.logo-links:hover {
-  transition: trasnform 0.1s linear;
-  transform: scale(1.5);
-}
+
+.logo-links{
+  transition: transform 0.1s linear;
+ }
+ .logo-links:hover {
+   transform: scale(1.5);
+ }
 
 .button-footer-link {
 display: block;
