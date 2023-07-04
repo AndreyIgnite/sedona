@@ -183,32 +183,37 @@
                   </div>
                 </div>
               </section>
+
         <div class="hotel-card-show-more"><button class="button-show-more" type="button">Загрузить ещё</button></div>
-        <ul class="pagination">
-          <li class="pagination-item current">1</li>
-          <li class="pagination-item">2</li>
-          <li class="pagination-item">3</li>
-          <li class="pagination-item">4</li>
-          <li class="pagination-item">...</li>
-          <li class="pagination-item">10</li>
-        </ul>
-        <p class="pagination-hotel-quantity">Гостиниц на странице:</p>
-        <form class="pagination-show-type">
-          <label for="hotel-show"><span class="hidden-element">Количество гостиниц</span></label>
-          <select class="hotel-show-list"  name="quantity" id="hotel-show">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="2">3</option>
-              <option value="2">4</option>
-          </select>
-        </form>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li><button class="pagination-item current">1</button></li>
+            <li><button class="pagination-item">2</button></li>
+            <li><button class="pagination-item">3</button></li>
+            <li><button class="pagination-item">4</button></li>
+            <li><button class="pagination-item">...</button></li>
+            <li><button class="pagination-item">10</button></li>
+          </ul>
+          <div class="show-hotels">
+            <p class="pagination-hotel-quantity">Гостиниц на странице:</p>
+            <form class="pagination-show-type">
+              <label for="hotel-show"><span class="hidden-element">Количество гостиниц</span></label>
+              <select class="hotel-show-list"  name="quantity" id="hotel-show">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="2">3</option>
+                  <option value="2">4</option>
+              </select>
+            </form>
+          </div>
+        </div>
         <section class="subscribe subscribe-inner">
           <h2 class="invisible-element">Подписка на рассылку</h2>
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-about">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="#" method="post">
-            <label"><input class="subscribe-control" type="text" name="e-mail" placeholder="Ваш e-mail"><span class="invisible-element">Форма для подписки</span></label>
-          <button class="button-subscribe" type="submit">Подписаться</button>
+            <input class="subscribe-control" type="text" name="e-mail" placeholder="Ваш e-mail">
+            <button class="button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
