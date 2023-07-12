@@ -58,6 +58,9 @@ body {
   line-height: 21px;
 }
 
+.main-index {
+  flex-grow: 1;
+}
 .breadcrums {
   display: flex;
 }
@@ -97,7 +100,12 @@ body {
   background-color: #ffffff;
   color: #000000;
   padding: 0 70px;
-  margin-bottom: -4px;
+  margin-bottom: -2px;
+}
+.main-logo {
+  position: relative;
+  z-index: 1;
+
 }
 .navigation {
   margin: 0 auto;
@@ -120,6 +128,13 @@ body {
   list-style-type: none;
 }
 
+.navigation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .navigation-link {
   display: block;
   padding: 20px 17px;
@@ -133,9 +148,9 @@ body {
 
 }
 
-.navigation-link-selected{
+/* .navigation-link-selected{
   border-bottom: 2px solid #000000;;
-}
+} */
 
 
 
@@ -410,7 +425,7 @@ body {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 100px;
+  max-width: 170px;
 }
 
 .button {
