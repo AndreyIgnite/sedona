@@ -747,6 +747,7 @@ body {
 }
 
 .footer-links-list {
+  padding: 0 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
