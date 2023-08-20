@@ -129,6 +129,7 @@ body {
 }
 
 .navigation-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,9 +149,17 @@ body {
 
 }
 
-/* .navigation-link-selected{
-  border-bottom: 2px solid #000000;;
-} */
+.navigation-link-selected::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: auto;
+  background-color: #756257;
+  left: 17px;
+  right: 17px;
+  bottom: -3px;
+
+}
 
 
 
@@ -774,10 +783,10 @@ body {
   align-self: center;
 }
 
-.logo-links{
-  transition: transform 0.1s linear;
+.button-footer-link{
+  transition: transform 0.2s linear;
  }
- .logo-links:hover {
+ .button-footer-link:hover {
    transform: scale(1.5);
  }
 
