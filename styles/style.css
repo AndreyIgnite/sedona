@@ -123,12 +123,24 @@ body {
 .catalog-filter-group {
   border: none;
 }
+.catalog-filter-group:first-child {
+  min-width: 217px;
+}
+.catalog-filter-group:nth-child(2) {
+  min-width: 312px;
+}
+
 
 .catalog-filter-list {
   list-style-type: none;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
 .catalog-filter-title {
+  margin-bottom: 30px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
