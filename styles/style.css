@@ -150,6 +150,18 @@ body {
   top: 2px
 }
 
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5.5px;
+  left: 5px;
+  width: 12.2px;
+  height: 9.9px;
+  background-image: url(../images/catalog/tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .control-input {
 
 
