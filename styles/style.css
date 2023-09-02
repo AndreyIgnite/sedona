@@ -35,7 +35,7 @@ p {
   margin: 0;
 }
 
-ul {
+ul, fieldset {
   margin: 0;
   padding: 0;
 }
@@ -62,10 +62,38 @@ body {
   flex-grow: 1;
 }
 .breadcrums {
+  position: relative;
   display: flex;
+  margin-bottom: 45px;
+  list-style-type: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bredcrums-item {
+  margin-right: 26px;
+}
+
+.bredcrums-item:first-child::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  top: 50%;
+  margin-top: -4px;
+  left: 23px;
+  background-image: url(../images/catalog/breadcrums.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+
 }
 
 .breadcrums-link {
+
   text-decoration: none;
 }
 
@@ -87,13 +115,21 @@ body {
 
 .catalog-filter {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
-  margin-top: 45px;
+
+}
+
+.catalog-filter-group {
+  border: none;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .house-filter {
-  margin-left: 67px;
+
 }
 
 .page-header {
@@ -186,8 +222,11 @@ body {
 }
 
 .img-container-catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   color: #ffffff;
-  padding-top: 35px;
+  padding: 35px 70px 0 70px;
   width: 1200px;
   height: 408px;
   background-image: url(../images/catalog-background1.jpg);
@@ -249,13 +288,14 @@ body {
   width: 528px;
   height: 68px;
   color: #ffffff;
-
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 77.64px;
-  margin-top: 0px;
-  margin-left: 71px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 5px;
+
 }
 
 .container-for-price {
