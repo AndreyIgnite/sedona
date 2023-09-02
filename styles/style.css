@@ -35,7 +35,7 @@ p {
   margin: 0;
 }
 
-ul, fieldset {
+ul, fieldset, legend {
   margin: 0;
   padding: 0;
 }
@@ -126,6 +126,42 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+}
+
+.catalog-filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.control {
+  display: block;
+  position: relative;
+}
+
+.control-mark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  background-color: white;
+  top: 2px
+}
+
+.control-input {
+
+
+}
+
+.control-label {
+  padding-left: 39px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .house-filter {
