@@ -83,27 +83,47 @@
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="radio-control" name="hoгse" value="motel" type="radio"><span>Гостиница</span></label>
+                    <label class="control">
+                      <input class="invisible-element control-input" name="hoгse" value="motel" type="radio">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="radio-control" name="hoгse" value="hotel" type="radio"><span>Мотель</span></label>
+                    <label class="control">
+                      <input class="invisible-element control-input" name="hoгse" value="motel" type="radio">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="radio-control" name="hoгse"  value="apartament" type="radio"><span>Аппартаменты</span></label>
+                    <label class="control">
+                      <input class="invisible-element control-input" name="hoгse" value="motel" type="radio">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="0"> от</label>
-                <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="9000"> до</label>
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-input">
+                    <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="0"><span>от</span></label>
+                    <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="9000"><span>до</span></label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 216px; left: 0;">
+                      <button class="range-toogle toogle-min" type="button">
+                      <span class="invisible-element">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toogle toogle-max" type="button">
+                      <span class="invisible-element">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
 
-                <button class="range-toogle toogle-min" type="button">
-                  <span class="hidden-element">Изменить минимальную цену</span>
-                </button>
-                <button class="range-toogle toogle-max" type="button">
-                    <span class="hidden-element">Изменить максимальную цену</span>
-                </button>
+                </div>
               </fieldset>
               <div>
                 <button class="button button-apply" type="submit">Применить</button>
