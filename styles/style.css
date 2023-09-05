@@ -229,6 +229,7 @@ body {
   border: none;
   top: -8px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .toogle-min {
@@ -468,7 +469,7 @@ body {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   background-color: white;
-
+  cursor: pointer;
 }
 
 .button-view-cards {
@@ -1028,7 +1029,7 @@ body {
 
 .button-subscribe {
   border: 0;
-
+  cursor: pointer;
   border-radius: 0px 10px 10px 0px;
   background: var(--special-cold-light, #83B3D3);
   color: #F2F2F2;
@@ -1109,6 +1110,7 @@ margin: 15px;
   border: 0;
   border-radius: 4px;
   background: var(--special-cold-light, #83B3D3);
+  cursor: pointer;
   color: #F2F2F2;
   width: 620px;
   height: 60px;
@@ -1139,6 +1141,7 @@ margin: 15px;
 }
 
 .pagination-item {
+  cursor: pointer;
   border: 0;
   border-radius: 4px;
   min-height: 55px;
@@ -1192,4 +1195,5 @@ margin: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
