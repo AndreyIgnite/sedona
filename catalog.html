@@ -141,15 +141,17 @@
         <section class="results-sorting">
           <h2 class="results-sorting-title">Найдено гостиниц: 38</h2>
           <form class="sorting-type">
-            <label for="sorting"><span class="hidden-element">Сорировка</span></label>
+            <label class="invisible-element" for="sorting"><span>Сорировка</span></label>
             <select class="results-price-sort"  name="price" id="sorting">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
           </form>
-          <button class="button-mode button-view-cards" type="submit"><span class="hidden-element">Карточки</span></button>
-          <button class="button-mode button-view-list" type="submit"><span class="hidden-element">Список</span></button>
-          <button class="button-mode button-view-slideshow" type="submit"><span class="hidden-element">Слайдшоу</span></button>
+          <div class="buttons-container">
+            <button class="button-mode button-view-cards cards-active" type="submit"><span class="invisible-element">Карточки</span></button>
+            <button class="button-mode button-view-list" type="submit"><span class="invisible-element">Список</span></button>
+            <button class="button-mode button-view-slideshow" type="submit"><span class="invisible-element">Слайдшоу</span></button>
+          </div>
         </section>
               <section class="results-show">
                 <div class="hotel-card">
@@ -247,13 +249,13 @@
           <div class="show-hotels">
             <p class="pagination-hotel-quantity">Гостиниц на странице:</p>
             <form class="pagination-show-type">
-              <label for="hotel-show"><span class="hidden-element">Количество гостиниц</span></label>
               <select class="hotel-show-list"  name="quantity" id="hotel-show">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="2">3</option>
                   <option value="2">4</option>
               </select>
+              <label for="invisible-element"><span class="invisible-element">Количество гостиниц</span></label>
             </form>
           </div>
         </div>
