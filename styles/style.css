@@ -1210,3 +1210,27 @@ margin: 15px;
 .button:first-child:hover {
   background-color: #615048;
 }
+
+.favorit-link {
+  position: relative;
+}
+
+.favorit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: -2px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #7DB550;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+}
