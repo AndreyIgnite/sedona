@@ -35,7 +35,7 @@ p {
   margin: 0;
 }
 
-ul, fieldset, legend, button {
+ul, fieldset, legend, button, input {
   margin: 0;
   padding: 0;
 }
@@ -377,7 +377,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 28px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -393,7 +393,7 @@ body {
   background-color: #756257;
   left: 17px;
   right: 17px;
-  bottom: -3px;
+  bottom: -1px;
 
 }
 
@@ -566,27 +566,17 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
 }
 .hotel-card-price {
   margin-left: auto;
   width: 143px;
-
   line-height: 23px;
   font-weight: 400;
-
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
 }
 .hotel-card-type {
   width: 133px;
   line-height: 23px;
   font-weight: 400;
-
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
 }
 
 .order-container {
@@ -594,22 +584,19 @@ body {
   margin-top: 16px;
   height: 37px;
   justify-content: space-between;
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
+
 }
 .raiting-container {
   margin-top: 16px;
   display: flex;
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
+
 }
 .hotel-stars {
   display: flex;
   align-items: center;
   justify-content: baseline;
   width: auto;
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
+
 }
 
 .star-container {
@@ -619,8 +606,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px; */
   width: 160px;
   height: 37px;
   margin-left: auto;
@@ -640,8 +625,8 @@ body {
 .button {
   display: block;
   border-radius: 4px;
+  padding: 8px 15px;
   border: none;
-  background-color: #756257;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -655,18 +640,9 @@ body {
 
 
 .btn-card {
-  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .btn-card-favorit {
@@ -744,7 +720,8 @@ body {
 .button-search {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  background-color: #756257;
+  padding: 15px 15px;
   min-width: 575px;
   border-radius: 10px;
 }
@@ -755,7 +732,8 @@ body {
   justify-content: center;
   min-width: 160px;
   margin-left: 20px;
-  padding: 8px 15px;
+  background-color: #756257;
+
 }
 
 .btn {
@@ -998,15 +976,30 @@ body {
 }
 
 .subscribe-form {
-  display: grid;
+  display: flex;
+  height: 60px;
+
+
+  /* display: grid;
   grid-template-columns: 3fr 1fr;
   width: 800px;
-  min-height: 60px;
+  min-height: 60px; */
 }
 
 .subscribe-control {
-
+  width: 600px;
+  border: 0;
   padding: 0 19px 0 22px;
+  border-radius: 10px 0 0 10px;
+
+  color: #000;
+  background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  /*
   outline: none;
   border-radius: 10px 0px 0px 10px;
   border: 0;
@@ -1015,23 +1008,34 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 26px; */
 }
 
 .button-subscribe {
   border: 0;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFF;
+  background-color: #83B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  text-transform: uppercase;
+  /*
   cursor: pointer;
   border-radius: 0px 10px 10px 0px;
   background: var(--special-cold-light, #83B3D3);
   color: #F2F2F2;
-
   text-align: center;
   font-size: 20px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
 }
 
 .subscribe-inner {
@@ -1073,19 +1077,24 @@ body {
   align-self: center;
 }
 
+.button-footer-link {
+  display: block;
+  padding: 20px;
+}
+
 .button-footer-link{
   transition: transform 0.3s linear;
  }
  .button-footer-link:hover {
-   transform: scale(1.5);
+  transform: scale(1.5);
  }
 
-.button-footer-link {
-display: block;
-padding: 5px;
-margin: 15px;
+ .button-footer-link svg:focus-visible {
+  outline: 0;
+  border: 3px solid #68A2CA;
+ }
 
-}
+
 
 
 .hotel-card-show-more {
@@ -1203,11 +1212,46 @@ margin: 15px;
   color: #756257;
 }
 
+.navigation-link:focus-visible {
+  outline: 2px solid #83B3D3;
+  outline-offset: -2px;
+
+}
+.page-logo:focus-visible {
+  outline: none;
+}
+
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.30)
+}
+
 .btn:hover svg {
   fill: #756257;
 }
+.btn:focus-visible {
+  outline: 2px solid #83B3D3;
+  outline-offset: -2px;
+}
 
-.button:first-child:hover {
+.btn:active svg {
+  opacity: 0.3;
+}
+
+
+.button-order:hover, .btn-card-style-details:hover, .button-search:hover {
+  background-color: #615048;
+}
+
+
+
+.button-order:focus-visible, .btn-card-style-details:focus-visible, .button-search:focus-visible {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+}
+
+.button-order:active, .btn-card-style-details:active, .button-search:active {
+  color: rgba(255, 255, 255, 0.30);
   background-color: #615048;
 }
 
@@ -1233,4 +1277,28 @@ margin: 15px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
+}
+
+.button-subscribe:hover, .button-subscribe:focus-visible {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:focus-visible {
+  outline: 0;
+  border: 3px solid #756257;
+}
+
+.button-subscribe:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+
+
+
+.subscribe-control:hover, .subscribe-control:focus-visible {
+  background-color: #E6E6E6;
+}
+.subscribe-control:focus-visible {
+  outline: 0;
+  border: 3px solid #83B3D3;
 }
