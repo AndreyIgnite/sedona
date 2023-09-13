@@ -79,7 +79,6 @@ body {
 }
 
 .bredcrums-item:first-child::after {
-
   content: "";
   position: absolute;
   width: 5px;
@@ -200,14 +199,17 @@ body {
   width: 20px;
   border-radius: 4px;
   background-color: white;
-  top: 2px
+  top: 1px;
+  cursor: pointer;
 }
+
+
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
   top: 5.5px;
-  left: 5px;
+  left: 4px;
   width: 12.2px;
   height: 9.9px;
   background-image: url(../images/catalog/tick.svg);
@@ -215,13 +217,39 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-filter-group:first-child .control-mark:hover {
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark:hover::before {
+  background-image: url(../images/catalog/tick0.6.svg);
+}
+
+.catalog-filter-group:first-child .control-input:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+  opacity: 0.6;
+}
+.catalog-filter-group:first-child .control-mark:active {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+.control-input[type="checkbox"]:checked + .control-mark:active::before {
+  background-image: url(../images/catalog/tick0.3.svg);
+}
+
+
+
 .catalog-filter-group:nth-child(2) .control-mark {
   position: absolute;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   background-color: white;
-  top: 2px
+  top: 1px;
+  cursor: pointer;
+}
+
+.catalog-filter-group:nth-child(2) .control-mark:hover {
+  background-color: rgba(255, 255, 255, 0.60);
 }
 
 .catalog-filter-group:nth-child(3) {
@@ -234,7 +262,7 @@ body {
   width: 10px;
   height: 10px;
   top: 5px;
-  left: 5px;
+  left: 5.33px;
   border-radius: 50%;
   background-color: #3F5E72;
 }
@@ -1221,7 +1249,7 @@ body {
 }
 .button-show-more {
   border: 0;
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--special-cold-light, #83B3D3);
   cursor: pointer;
   color: #F2F2F2;
