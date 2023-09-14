@@ -252,6 +252,12 @@ body {
   background-color: rgba(255, 255, 255, 0.60);
 }
 
+.catalog-filter-group:nth-child(2) .control-input[type="radio"]:checked:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+
+
 .catalog-filter-group:nth-child(3) {
   width: 287px;
 }
@@ -309,8 +315,8 @@ body {
 }
 
 .range-wrapper-input {
-  border: 2px solid white;
-  border-radius: 5px;
+  /* border: 2px solid white;
+  border-radius: 5px; */
   display: flex;
   margin-bottom: 39px;
 }
@@ -319,8 +325,27 @@ body {
 }
 
 .label-input:first-child {
-  border-right: 2px solid white;
+  /* border-right: 2px solid white; */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px 0 0 4px;
 }
+
+.label-input:last-child {
+  /* border-right: 2px solid white; */
+  margin-left: -2px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0 4px 4px 0;
+}
+
+.label-input:hover {
+  border: 2px solid rgb(255, 255, 255, 0.6);
+}
+
+.label-input:focus-visible {
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+
 
 
 
