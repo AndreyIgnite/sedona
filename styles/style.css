@@ -648,6 +648,17 @@ body {
   width: 287px;
 }
 
+.button-mode:hover, .button-mode:focus-visible {
+  outline: none;
+  border: 2px solid #83B3D3;
+}
+
+.button-mode:active {
+  outline: none;
+  border: 2px solid #858585;
+}
+
+
 .results-price-sort {
   padding: 12px 19px 12px 19px;
   flex-grow: 1;
