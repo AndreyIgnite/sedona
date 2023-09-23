@@ -489,12 +489,10 @@ body {
   padding: 0 70px;
   margin-bottom: -2px;
 }
-.main-logo {
-  position: relative;
-  z-index: 1;
 
-}
 .navigation {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -577,7 +575,7 @@ body {
 
 .img-container svg:last-child {
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
 }
 
 
