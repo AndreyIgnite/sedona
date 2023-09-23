@@ -557,9 +557,10 @@ body {
 
 
 .img-container {
-  padding-top: 51px;
+  position: relative;
+  /* padding-top: 51px; */
   align-items: center;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   width: 1198px;
@@ -568,6 +569,17 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
 }
+.img-container svg:first-child {
+  top: 51px;
+  left: 371px;
+  position: absolute;
+}
+
+.img-container svg:last-child {
+  position: absolute;
+  bottom: -4px;
+}
+
 
 .index-img {
   display: block;
