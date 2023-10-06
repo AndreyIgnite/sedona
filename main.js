@@ -54,6 +54,3 @@ close_btn.addEventListener("click", function(){
   modal.classList.add("no-display-modal")
 })
 
-modal.onclick = function() {
-  modal.classList.add("no-display-modal")
-}
