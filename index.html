@@ -249,8 +249,7 @@
       </footer>
       <div class="modal-container">
         <div class="modal-window">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="close">
+          <button class="close" type="button">
             <svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
               <g clip-path="url(#clip0_18711_342)">
               <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
@@ -262,7 +261,8 @@
               </defs>
               </svg>
           </button>
-          <form action="#" method="post">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="#" method="post">
             <fieldset class="modal-date-inout">
               <span class="date">Дата заезда:</span>
               <input type="date" name="data">
@@ -273,19 +273,66 @@
             </fieldset>
             <div class="modal-quantity-family-members">
               <fieldset class="modal-quantity-parent">
-                <span>Взрослые</span>
-                <input class="quantity-men" type="number" name="data">
+                <span>Взрослые:</span>
+                <div class="quantity-container">
+                  <button id="parent-minus" type="button" class="quantity-button quantity-button-minus">
+                    <svg class="svg-minus" xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                  </button>
+                  <input id="parents" class="quantity-men" type="number" name="parent" value="1" min="1" max="10">
+                  <button id="parent-plus" type="button" class="quantity-button quantity-button-plus">
+                    <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                      <g opacity="0.3" clip-path="url(#clip0_18711_304)">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_18711_304">
+                      <rect width="13" height="13" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </button>
+                </div>
               </fieldset>
               <fieldset class="modal-quantity-children">
                 <span>Дети</span>
                 <div class="children-info">
-
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="9" viewBox="0 0 1 9" fill="none">
+                    <g clip-path="url(#clip0_18711_289)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                    <path d="M1 0H0V1H1V0Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_18711_289">
+                    <rect width="1" height="9" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
                 </div>
-                <input class="quantity-men" type="number" name="data">
+                <div class="quantity-container">
+                  <button type="button" class="quantity-button quantity-button-plus"> <svg class="svg-minus" xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg></button>
+                  <input class="quantity-men" type="number" name="children" value="1" min="1" max="10">
+                  <button type="button" class="quantity-button quantity-button-minus" ><svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <g opacity="0.3" clip-path="url(#clip0_18711_304)">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_18711_304">
+                    <rect width="13" height="13" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></button>
+                </div>
               </fieldset>
             </div>
+            <button class="modal-form-submit-button" type="button">Найти</button>
           </form>
+
         </div>
       </div>
   </body>
+  <script src="/main.js"></script>
 </html>
