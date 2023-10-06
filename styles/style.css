@@ -738,10 +738,6 @@ body {
   opacity: 0.6;
 }
 
-.hotel-card-image:focus-visible {
-
-}
-
 .hotel-card-link:focus-visible {
   outline: 3px solid var(--special-cold-light, #83B3D3);
   outline-offset: 0;
@@ -1618,7 +1614,6 @@ body {
 
 
 .modal-container {
-  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -1626,6 +1621,10 @@ body {
   height: 100%;
   background: rgba(242, 242, 242, 0.80);
   z-index: 6;
+}
+
+.no-display-modal {
+  display: none;
 }
 
 .modal-window {

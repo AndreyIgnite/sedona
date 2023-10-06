@@ -44,3 +44,16 @@ button_child_minus.addEventListener("click", function(){
 })
 
 
+const search_btn = document.querySelector(".btn-search")
+const close_btn = document.querySelector(".close")
+const modal = document.querySelector(".modal-container")
+search_btn.addEventListener("click", function(){
+  modal.classList.remove("no-display-modal")
+})
+close_btn.addEventListener("click", function(){
+  modal.classList.add("no-display-modal")
+})
+
+modal.onclick = function() {
+  modal.classList.add("no-display-modal")
+}
