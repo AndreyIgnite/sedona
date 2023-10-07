@@ -4,7 +4,7 @@ const parent_input = document.querySelector("#parents");
 
 button_parent_plus.addEventListener("click", function(){
   if(parent_input.value < 10) {
-  parent_input.value = ++parent_input.value
+  parent_input.value = Number(parent_input.value) + 1
   }
   else{
     parent_input.value = 10
@@ -13,7 +13,7 @@ button_parent_plus.addEventListener("click", function(){
 
 button_parent_minus.addEventListener("click", function(){
   if(parent_input.value > 1) {
-  parent_input.value = --parent_input.value
+  parent_input.value = Number(parent_input.value) - 1;
   }
   else{
     parent_input.value = 1
@@ -35,11 +35,11 @@ button_child_plus.addEventListener("click", function(){
 })
 
 button_child_minus.addEventListener("click", function(){
-  if(child_input.value > 1) {
+  if(child_input.value > 0) {
     child_input.value = Number(child_input.value)-1
   }
   else{
-    child_input.value = 1
+    child_input.value = 0
   }
 })
 
@@ -54,3 +54,9 @@ close_btn.addEventListener("click", function(){
   modal.classList.add("no-display-modal")
 })
 
+
+const child_info = document.querySelector(".children-info")
+const black_plate = document.querySelector(".black-plate-info")
+child_info.addEventListener("click", function(){
+  black_plate.classList.toggle("black-plate-info-show")
+})
