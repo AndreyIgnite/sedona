@@ -1767,6 +1767,7 @@ body {
 }
 
 .black-plate-info {
+  text-align: left;
   position: absolute;
   top: 44px;
   left: -112px;
