@@ -1,340 +1,633 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Sedona</title>
     <!-- <link rel="stylesheet" href="styles/reset.css"> -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
     <!-- <meta content="width=devie-width, initial-scale=1" name="viewport"> -->
   </head>
   <body>
-      <header class="page-header">
-        <nav class="navigation">
-          <a class="page-logo" href="index.html"><img class="main-logo" src="images/logo.svg" width="140" height="74" alt="Логотип Седоны"></a>
-          <ul class="navigation-list">
-            <li class="navigation-item item-light">
-              <a class="navigation-link navigation-link-selected" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item" ><a class="navigation-link" href="#">О Седоне</a></li>
-            <li class="navigation-item" ><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
-          </ul>
-          <div class="fav-container">
-            <button class="btn btn-search" type="button">
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="page-logo" href="index.html"
+          ><img
+            class="main-logo"
+            src="images/logo.svg"
+            width="140"
+            height="74"
+            alt="Логотип Седоны"
+        /></a>
+        <ul class="navigation-list">
+          <li class="navigation-item item-light">
+            <a
+              class="navigation-link navigation-link-selected"
+              href="index.html"
+              >Главная</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="fav-container">
+          <button class="btn btn-search" type="button">
             <span class="invisible-element">Поиск</span>
-            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+            <svg
+              class="nav-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+            >
               <g clip-path="url(#clip0_18711_1020)">
-              <path d="M18.6821 16.9114L14.9821 13.2114C15.9821 11.9114 16.6821 10.2114 16.6821 8.31142C16.6821 3.91142 13.0821 0.311417 8.68207 0.311417C4.28207 0.311417 0.682068 4.01142 0.682068 8.41142C0.682068 12.8114 4.28207 16.4114 8.68207 16.4114C10.4821 16.4114 12.1821 15.8114 13.5821 14.7114L17.2821 18.4114L18.6821 16.9114ZM8.68207 14.4114C5.38207 14.4114 2.68207 11.7114 2.68207 8.41142C2.68207 5.11142 5.38207 2.41142 8.68207 2.41142C11.9821 2.41142 14.6821 5.11142 14.6821 8.41142C14.6821 11.7114 11.9821 14.4114 8.68207 14.4114Z"/>
+                <path
+                  d="M18.6821 16.9114L14.9821 13.2114C15.9821 11.9114 16.6821 10.2114 16.6821 8.31142C16.6821 3.91142 13.0821 0.311417 8.68207 0.311417C4.28207 0.311417 0.682068 4.01142 0.682068 8.41142C0.682068 12.8114 4.28207 16.4114 8.68207 16.4114C10.4821 16.4114 12.1821 15.8114 13.5821 14.7114L17.2821 18.4114L18.6821 16.9114ZM8.68207 14.4114C5.38207 14.4114 2.68207 11.7114 2.68207 8.41142C2.68207 5.11142 5.38207 2.41142 8.68207 2.41142C11.9821 2.41142 14.6821 5.11142 14.6821 8.41142C14.6821 11.7114 11.9821 14.4114 8.68207 14.4114Z"
+                />
               </g>
               <defs>
-              <clipPath id="clip0_18711_1020">
-              <rect width="18" height="18" fill="white" transform="translate(0.682068 0.411423)"/>
-              </clipPath>
+                <clipPath id="clip0_18711_1020">
+                  <rect
+                    width="18"
+                    height="18"
+                    fill="white"
+                    transform="translate(0.682068 0.411423)"
+                  />
+                </clipPath>
               </defs>
-              </svg>
-            </button>
-            <a class="btn favorit-link" href="">
-              <span class="invisible-element">Избранное</span>
-              <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
-                <path d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"/>
-                </svg>
-                <div class="favorit">12</div>
-            </a>
-          </div>
-          <a class="button button-order" href="catalog.html">Хочу сюда!</a>
-        </nav>
-      </header>
-      <main class="main-index">
-
-
-        <div class="container-description">
-         <h3 class="advantages-decsription">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
-         <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-        <div class="grid">
-
-          <!-- <div class="flex-container"> -->
-            <div class="card background-blue city">
-              <h3 class="card-title-place white">Настоящий <br> городок</h3>
-              <p class="card-number white">— №1 —</p>
-              <p class="card-title-place-description white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="card-image image-1">
-              <img src="images/photo-1.jpg" width="800" height="384" alt="Фото Седоны с заведениями">
-            </div>
-          <!-- </div> -->
-          <!-- <div class="flex-container"> -->
-            <div class="card background-gray house">
-              <svg class="card-logo" xmlns="http://www.w3.org/2000/svg" width="75" height="72" viewBox="0 0 75 72" fill="none">
-                <g clip-path="url(#clip0_31915_398)">
-                  <path d="M29.7 65H45.7V41.2H29.7C29.7 41.2 29.7 65 29.7 65ZM32.5999 44.0999H42.7V62.0999H32.5999V44.0999Z" fill="#81B3D2"/>
-                  <path d="M72.8 39.3L74.9 37.2L65 27.3V0H51.0999V13.6L37.5 0L0.199951 37.2L2.29995 39.3L10.1 31.5V69.1H6.09995V72H70V69.1H64.9V31.5L72.8 39.3ZM62 69.1H13V28.5L37.5 4.1L62 28.5V69.1ZM62 24.4L54.0999 16.5V2.9H62V24.4Z" fill="#81B3D2"/>
-                  <path d="M29.8999 27.1C29.8999 31.4 33.3999 34.8 37.5999 34.8C41.8999 34.8 45.3999 31.3 45.3999 27.1C45.3999 22.8 41.8999 19.4 37.5999 19.4C33.3999 19.4 29.8999 22.8 29.8999 27.1ZM37.6999 22.1C40.3999 22.1 42.6999 24.3 42.6999 27C42.6999 29.7 40.4999 31.9 37.6999 31.9C34.9999 31.9 32.6999 29.7 32.6999 27C32.6999 24.3 34.8999 22.1 37.6999 22.1Z" fill="#81B3D2"/>
-                  <path d="M20.1 41.2H17.1V45.0999H20.1V41.2Z" fill="#81B3D2"/>
-                  <path d="M26 41.2H23V45.0999H26V41.2Z" fill="#81B3D2"/>
-                  <path d="M20.1 47.2H17.1V51.0999H20.1V47.2Z" fill="#81B3D2"/>
-                  <path d="M26 47.2H23V51.0999H26V47.2Z" fill="#81B3D2"/>
-                  <path d="M52 41.2H49V45.0999H52V41.2Z" fill="#81B3D2"/>
-                  <path d="M57.8999 41.2H54.8999V45.0999H57.8999V41.2Z" fill="#81B3D2"/>
-                  <path d="M52 47.2H49V51.0999H52V47.2Z" fill="#81B3D2"/>
-                  <path d="M57.8999 47.2H54.8999V51.0999H57.8999V47.2Z" fill="#81B3D2"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_31915_398">
-                    <rect width="75" height="72" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <h3 class="card-title-service">Жильё</h3>
-              <p class="card-title-service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </div>
-            <div class="card backgroun-white food">
-              <svg class="card-logo" xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70" fill="none">
-                <g clip-path="url(#clip0_31915_386)">
-                  <path d="M69.9 46.7H59.3H14.6H4.1C1.8 46.7 0 48.6 0 51V54.5C0 56.9 1.9 58.7999 4.1 58.7999H5V59.9C5 65.4 9.3 70 14.6 70H59.2C64.5 70 68.8 65.5 68.8 59.9V58.7999H69.7C72 58.7999 73.8 56.9 73.8 54.5V51C74 48.7 72.1 46.7 69.9 46.7ZM66 59.9C66 63.8 63 66.9 59.3 66.9H14.6C10.9 66.9 7.9 63.7 7.9 59.9V58.7999H66V59.9ZM71.1 54.5C71.1 55.2 70.5 55.7999 69.9 55.7999H68.9H66H8H5H4C3.3 55.7999 2.8 55.2 2.8 54.5V51C2.8 50.3 3.4 49.7 4 49.7H7.7H14.6H59.2H66.1H69.8C70.5 49.7 71 50.3 71 51C71.1 51 71.1 54.5 71.1 54.5Z" fill="#81B3D2"/>
-                  <path d="M15.6 38.4L21 42.5L26.3 38.4L31.6 42.5L36.9 38.4L42.3 42.5L47.6 38.4L52.9 42.5L58.3 38.4L63.6 42.5L69.8 37.8L68.1 35.3L63.6 38.7L58.3 34.6L52.9 38.7L47.6 34.6L42.3 38.7L36.9 34.6L31.6 38.7L26.3 34.6L21 38.7L15.6 34.6L10.3 38.7L5.79998 35.3L4.09998 37.8L10.3 42.5L15.6 38.4Z" fill="#81B3D2"/>
-                  <path d="M8 31.5H65.9H68.8C68.8 30.9 68.9 30.3 68.9 29.6C68.9 29.2 68.9 28.8 68.9 28.4C68.2 12.7 54.2 0 37 0C19.7 0 5.7 12.7 5 28.5C5 28.9 5 29.3 5 29.7C5 30.3 5 31 5.1 31.6H8V31.5ZM37 3C52.6 3 65.4 14.3 66 28.5H8C8.6 14.4 21.4 3 37 3Z" fill="#81B3D2"/>
-                  <path d="M37 17.3C38.0493 17.3 38.9 16.4046 38.9 15.3C38.9 14.1955 38.0493 13.3 37 13.3C35.9506 13.3 35.1 14.1955 35.1 15.3C35.1 16.4046 35.9506 17.3 37 17.3Z" fill="#81B3D2"/>
-                  <path d="M29.2001 12.2C30.2494 12.2 31.1 11.3045 31.1 10.2C31.1 9.09538 30.2494 8.19995 29.2001 8.19995C28.1507 8.19995 27.3 9.09538 27.3 10.2C27.3 11.3045 28.1507 12.2 29.2001 12.2Z" fill="#81B3D2"/>
-                  <path d="M44.7001 12.2C45.7494 12.2 46.6 11.3045 46.6 10.2C46.6 9.09538 45.7494 8.19995 44.7001 8.19995C43.6507 8.19995 42.8 9.09538 42.8 10.2C42.8 11.3045 43.6507 12.2 44.7001 12.2Z" fill="#81B3D2"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_31915_386">
-                    <rect width="74" height="70" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <h3 class="card-title-service">Еда</h3>
-              <p class="card-title-service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div class="card background-gray souvenir">
-              <svg class="card-logo" xmlns="http://www.w3.org/2000/svg" width="64" height="76" viewBox="0 0 64 76" fill="none">
-                <g clip-path="url(#clip0_31915_380)">
-                  <path d="M61.1 22.5H61H36.3C50.1 15.6 51.2 11.2 50.7 8.79997C49.5 4.79997 45 1.79997 40.7 3.39997C35.1 5.49997 33.6 13.8 32.1 19.8C30.1 13.7 28.3 5.99997 23.9 2.09997C22.6 0.999966 20.8 -0.200034 18.1 0.0999663C14.1 0.499966 8.3 5.49997 10.6 11.1C12.9 16.5 20.3 19.9 25.2 22.6H3.2H2.9C1.3 22.6 0 23.9 0 25.5V36.8C0 38.4 1.3 39.7 2.9 39.7H3.2V73V75.4V76H61V75.5V73V39.6H61.1C62.7 39.6 64 38.3 64 36.7V25.4C64 23.8 62.7 22.5 61.1 22.5ZM42.4 5.89997C44.5 5.59997 47.4 7.19997 47.7 9.09997C48.1 11.9 44.3 14.4 42.6 15.5C40.1 17.2 37.7 18.1 35.3 19.6C36.2 15.9 37.8 6.59997 42.4 5.89997ZM19.5 15.9C17.3 14.4 13 11.5 13.1 8.09997C13.2 4.49997 18.8 1.49997 21.9 4.19997C25.8 7.59997 27.6 15.3 29 20.8C25.8 19.3 22.7 18 19.5 15.9ZM25.5 73H6.1V39.6H25.5V73ZM25.5 36.5H3V25.5H25.5V36.5ZM35.7 36.5V39.5V73H28.5V39.6V36.6V25.6H35.7V36.5ZM58 73H38.6V39.6H58V73ZM60.9 36.5H38.6V25.5H60.9V36.5Z" fill="#81B3D2"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_31915_380">
-                    <rect width="64" height="76" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <h3 class="card-title-service">Сувениры</h3>
-              <p class="card-title-service-description">Не только китайского, но и настоящего местного производства!</p>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="flex-container"> -->
-              <div class="card-image image-2">
-                <img src="images/photo-2.jpg" alt="Фото моста дьявола">
-              </div>
-              <div class="card background-blue brige">
-                <h3 class="card-title-place white">Там есть <br> мост дьявола</h3>
-                <p class="card-number white">— №2 —</p>
-                <p class="card-title-place-description white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-          <!-- </div> -->
-          <!-- <div class="flex-container"> -->
-            <div class="card background-gray squar">
-              <h3 class="card-title-place black">Небольшая <br> площадь</h3>
-              <p class="card-number black">— №3 —</p>
-              <p class="card-title-place-description black">Все достопримечательности находятся очень близко</p>
-            </div>
-            <div class="card backgroun-green road">
-              <h3 class="card-title-place black">Красивая <br> дорога</h3>
-              <p class="card-number black">— №4 —</p>
-              <p class="card-title-place-description black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-            <div class="card background-gray tourism">
-              <h3 class="card-title-place black">Мало <br> туристов</h3>
-              <p class="card-number black">— №5 —</p>
-              <p class="card-title-place-description black">Большинство едет в Гранд Каньон и толпится там</p>
-            </div>
-          <!-- </div> -->
-        </div>
-          <section class="book-hotel">
-            <h2 class="invisible-element">Бронирование гостиницы в Седоне</h2>
-            <h3 class="book-hotel-intrested">Заинтересовались?</h3>
-            <p class="book-hotel-order" >Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button button-search" href="#"><span class="">Поиск гостиницы в седоне</span></a>
-          </section>
-          <section class="subscribe">
-            <h2 class="invisible-element">Подписка на рассылку</h2>
-            <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-            <p class="subscribe-about">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-            <form class="subscribe-form" action="#" method="post">
-              <input class="subscribe-control" type="text" name="e-mail" placeholder="Ваш e-mail">
-              <button class="button-subscribe" type="submit">Подписаться</button>
-            </form>
-          </section>
-      </main>
-      <footer>
-        <section class="footer-links">
-          <ul class="footer-links-list">
-            <li class="footer-links-item">
-              <a class="button-footer-link" href="#">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none">
-                  <g clip-path="url(#clip0_24196_690)">
-                    <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_24196_690">
-                      <rect width="18" height="15" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="invisible-element">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-links-item">
-              <a class="button-footer-link" href="#">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-                  <g clip-path="url(#clip0_24196_688)">
-                    <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_24196_688">
-                      <rect width="10" height="18" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="invisible-element">Facebook</span>
-              </a>
-            </li>
-            <li class="footer-links-item">
-              <a class="button-footer-link" href="#">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
-                  <g clip-path="url(#clip0_24196_686)">
-                    <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_24196_686">
-                      <rect width="20" height="16" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="invisible-element">Youtube</span>
-              </a>
-            </li>
-          </ul>
-          <a class="footer-number" href="tel:88128121212"><p class="number-value">+7 (812) 812-12-12</p></a>
-          <a class="footer-logo" href="№">
-            <svg class="academy-logo" xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34" fill="none">
-               <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
-               <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"/>
-               <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
-               <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"/>
-               <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"/>
-               <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"/>
-               <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"/>
-               <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"/>
-               <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z" />
-               <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"/>
-               <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z" />
-               <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"/>
             </svg>
-          </a>
-        </section>
-      </footer>
-      <div class="modal-container no-display-modal">
-        <div class="modal-window">
-          <button class="close" type="button">
-            <svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-              <g clip-path="url(#clip0_18711_342)">
-              <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_18711_342">
-              <rect width="13" height="13" fill="white"/>
-              </clipPath>
-              </defs>
-              </svg>
           </button>
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="modal-form" action="#" method="post">
-            <fieldset class="modal-date-inout">
-              <span class="date">Дата заезда:</span>
-              <input class="modal-date-inout-input " type="date" name="data">
+          <a class="btn favorit-link" href="">
+            <span class="invisible-element">Избранное</span>
+            <svg
+              class="nav-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="17"
+              viewBox="0 0 19 17"
+              fill="none"
+            >
+              <path
+                d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"
+              />
+            </svg>
+            <div class="favorit">12</div>
+          </a>
+        </div>
+        <a class="button button-order" href="catalog.html">Хочу сюда!</a>
+      </nav>
+    </header>
+    <main class="main-index">
+      <div class="container-description">
+        <h3 class="advantages-decsription">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h3>
+        <p class="advantages-text">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+        </p>
+      </div>
+      <div class="grid">
+        <!-- <div class="flex-container"> -->
+        <div class="card background-blue city">
+          <h3 class="card-title-place white">
+            Настоящий <br />
+            городок
+          </h3>
+          <p class="card-number white">— №1 —</p>
+          <p class="card-title-place-description white">
+            Седона — не аттракцион для туристов, там течёт своя жизнь
+          </p>
+        </div>
+        <div class="card-image image-1">
+          <img
+            src="images/photo-1.jpg"
+            width="800"
+            height="384"
+            alt="Фото Седоны с заведениями"
+          />
+        </div>
+        <!-- </div> -->
+        <!-- <div class="flex-container"> -->
+        <div class="card background-gray house">
+          <svg
+            class="card-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="75"
+            height="72"
+            viewBox="0 0 75 72"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_31915_398)">
+              <path
+                d="M29.7 65H45.7V41.2H29.7C29.7 41.2 29.7 65 29.7 65ZM32.5999 44.0999H42.7V62.0999H32.5999V44.0999Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M72.8 39.3L74.9 37.2L65 27.3V0H51.0999V13.6L37.5 0L0.199951 37.2L2.29995 39.3L10.1 31.5V69.1H6.09995V72H70V69.1H64.9V31.5L72.8 39.3ZM62 69.1H13V28.5L37.5 4.1L62 28.5V69.1ZM62 24.4L54.0999 16.5V2.9H62V24.4Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M29.8999 27.1C29.8999 31.4 33.3999 34.8 37.5999 34.8C41.8999 34.8 45.3999 31.3 45.3999 27.1C45.3999 22.8 41.8999 19.4 37.5999 19.4C33.3999 19.4 29.8999 22.8 29.8999 27.1ZM37.6999 22.1C40.3999 22.1 42.6999 24.3 42.6999 27C42.6999 29.7 40.4999 31.9 37.6999 31.9C34.9999 31.9 32.6999 29.7 32.6999 27C32.6999 24.3 34.8999 22.1 37.6999 22.1Z"
+                fill="#81B3D2"
+              />
+              <path d="M20.1 41.2H17.1V45.0999H20.1V41.2Z" fill="#81B3D2" />
+              <path d="M26 41.2H23V45.0999H26V41.2Z" fill="#81B3D2" />
+              <path d="M20.1 47.2H17.1V51.0999H20.1V47.2Z" fill="#81B3D2" />
+              <path d="M26 47.2H23V51.0999H26V47.2Z" fill="#81B3D2" />
+              <path d="M52 41.2H49V45.0999H52V41.2Z" fill="#81B3D2" />
+              <path
+                d="M57.8999 41.2H54.8999V45.0999H57.8999V41.2Z"
+                fill="#81B3D2"
+              />
+              <path d="M52 47.2H49V51.0999H52V47.2Z" fill="#81B3D2" />
+              <path
+                d="M57.8999 47.2H54.8999V51.0999H57.8999V47.2Z"
+                fill="#81B3D2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_31915_398">
+                <rect width="75" height="72" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3 class="card-title-service">Жильё</h3>
+          <p class="card-title-service-description">
+            Рекомендуем пожить в настоящем мотеле, всё как в кино!
+          </p>
+        </div>
+        <div class="card backgroun-white food">
+          <svg
+            class="card-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="74"
+            height="70"
+            viewBox="0 0 74 70"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_31915_386)">
+              <path
+                d="M69.9 46.7H59.3H14.6H4.1C1.8 46.7 0 48.6 0 51V54.5C0 56.9 1.9 58.7999 4.1 58.7999H5V59.9C5 65.4 9.3 70 14.6 70H59.2C64.5 70 68.8 65.5 68.8 59.9V58.7999H69.7C72 58.7999 73.8 56.9 73.8 54.5V51C74 48.7 72.1 46.7 69.9 46.7ZM66 59.9C66 63.8 63 66.9 59.3 66.9H14.6C10.9 66.9 7.9 63.7 7.9 59.9V58.7999H66V59.9ZM71.1 54.5C71.1 55.2 70.5 55.7999 69.9 55.7999H68.9H66H8H5H4C3.3 55.7999 2.8 55.2 2.8 54.5V51C2.8 50.3 3.4 49.7 4 49.7H7.7H14.6H59.2H66.1H69.8C70.5 49.7 71 50.3 71 51C71.1 51 71.1 54.5 71.1 54.5Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M15.6 38.4L21 42.5L26.3 38.4L31.6 42.5L36.9 38.4L42.3 42.5L47.6 38.4L52.9 42.5L58.3 38.4L63.6 42.5L69.8 37.8L68.1 35.3L63.6 38.7L58.3 34.6L52.9 38.7L47.6 34.6L42.3 38.7L36.9 34.6L31.6 38.7L26.3 34.6L21 38.7L15.6 34.6L10.3 38.7L5.79998 35.3L4.09998 37.8L10.3 42.5L15.6 38.4Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M8 31.5H65.9H68.8C68.8 30.9 68.9 30.3 68.9 29.6C68.9 29.2 68.9 28.8 68.9 28.4C68.2 12.7 54.2 0 37 0C19.7 0 5.7 12.7 5 28.5C5 28.9 5 29.3 5 29.7C5 30.3 5 31 5.1 31.6H8V31.5ZM37 3C52.6 3 65.4 14.3 66 28.5H8C8.6 14.4 21.4 3 37 3Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M37 17.3C38.0493 17.3 38.9 16.4046 38.9 15.3C38.9 14.1955 38.0493 13.3 37 13.3C35.9506 13.3 35.1 14.1955 35.1 15.3C35.1 16.4046 35.9506 17.3 37 17.3Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M29.2001 12.2C30.2494 12.2 31.1 11.3045 31.1 10.2C31.1 9.09538 30.2494 8.19995 29.2001 8.19995C28.1507 8.19995 27.3 9.09538 27.3 10.2C27.3 11.3045 28.1507 12.2 29.2001 12.2Z"
+                fill="#81B3D2"
+              />
+              <path
+                d="M44.7001 12.2C45.7494 12.2 46.6 11.3045 46.6 10.2C46.6 9.09538 45.7494 8.19995 44.7001 8.19995C43.6507 8.19995 42.8 9.09538 42.8 10.2C42.8 11.3045 43.6507 12.2 44.7001 12.2Z"
+                fill="#81B3D2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_31915_386">
+                <rect width="74" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3 class="card-title-service">Еда</h3>
+          <p class="card-title-service-description">
+            Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+          </p>
+        </div>
+        <div class="card background-gray souvenir">
+          <svg
+            class="card-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="76"
+            viewBox="0 0 64 76"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_31915_380)">
+              <path
+                d="M61.1 22.5H61H36.3C50.1 15.6 51.2 11.2 50.7 8.79997C49.5 4.79997 45 1.79997 40.7 3.39997C35.1 5.49997 33.6 13.8 32.1 19.8C30.1 13.7 28.3 5.99997 23.9 2.09997C22.6 0.999966 20.8 -0.200034 18.1 0.0999663C14.1 0.499966 8.3 5.49997 10.6 11.1C12.9 16.5 20.3 19.9 25.2 22.6H3.2H2.9C1.3 22.6 0 23.9 0 25.5V36.8C0 38.4 1.3 39.7 2.9 39.7H3.2V73V75.4V76H61V75.5V73V39.6H61.1C62.7 39.6 64 38.3 64 36.7V25.4C64 23.8 62.7 22.5 61.1 22.5ZM42.4 5.89997C44.5 5.59997 47.4 7.19997 47.7 9.09997C48.1 11.9 44.3 14.4 42.6 15.5C40.1 17.2 37.7 18.1 35.3 19.6C36.2 15.9 37.8 6.59997 42.4 5.89997ZM19.5 15.9C17.3 14.4 13 11.5 13.1 8.09997C13.2 4.49997 18.8 1.49997 21.9 4.19997C25.8 7.59997 27.6 15.3 29 20.8C25.8 19.3 22.7 18 19.5 15.9ZM25.5 73H6.1V39.6H25.5V73ZM25.5 36.5H3V25.5H25.5V36.5ZM35.7 36.5V39.5V73H28.5V39.6V36.6V25.6H35.7V36.5ZM58 73H38.6V39.6H58V73ZM60.9 36.5H38.6V25.5H60.9V36.5Z"
+                fill="#81B3D2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_31915_380">
+                <rect width="64" height="76" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3 class="card-title-service">Сувениры</h3>
+          <p class="card-title-service-description">
+            Не только китайского, но и настоящего местного производства!
+          </p>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="flex-container"> -->
+        <div class="card-image image-2">
+          <img src="images/photo-2.jpg" alt="Фото моста дьявола" />
+        </div>
+        <div class="card background-blue brige">
+          <h3 class="card-title-place white">
+            Там есть <br />
+            мост дьявола
+          </h3>
+          <p class="card-number white">— №2 —</p>
+          <p class="card-title-place-description white">
+            Да, по нему можно пройти! Если вы осмелитесь, разумеется
+          </p>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="flex-container"> -->
+        <div class="card background-gray squar">
+          <h3 class="card-title-place black">
+            Небольшая <br />
+            площадь
+          </h3>
+          <p class="card-number black">— №3 —</p>
+          <p class="card-title-place-description black">
+            Все достопримечательности находятся очень близко
+          </p>
+        </div>
+        <div class="card backgroun-green road">
+          <h3 class="card-title-place black">
+            Красивая <br />
+            дорога
+          </h3>
+          <p class="card-number black">— №4 —</p>
+          <p class="card-title-place-description black">
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </div>
+        <div class="card background-gray tourism">
+          <h3 class="card-title-place black">
+            Мало <br />
+            туристов
+          </h3>
+          <p class="card-number black">— №5 —</p>
+          <p class="card-title-place-description black">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
+        </div>
+        <!-- </div> -->
+      </div>
+      <section class="book-hotel">
+        <h2 class="invisible-element">Бронирование гостиницы в Седоне</h2>
+        <h3 class="book-hotel-intrested">Заинтересовались?</h3>
+        <p class="book-hotel-order">
+          Укажите предполагаемые даты поездки, <br />и мы покажем вам лучшие
+          предложения гостиниц в Седоне
+        </p>
+        <a class="button button-search" href="#"
+          ><span class="">Поиск гостиницы в седоне</span></a
+        >
+      </section>
+      <section class="subscribe">
+        <h2 class="invisible-element">Подписка на рассылку</h2>
+        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <p class="subscribe-about">
+          Только полезная информация и никакого спама, <br />честное
+          бойскаутское!
+        </p>
+        <form class="subscribe-form" action="#" method="post">
+          <input
+            class="subscribe-control"
+            type="text"
+            name="e-mail"
+            placeholder="Ваш e-mail"
+          />
+          <button class="button-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-links">
+        <ul class="footer-links-list">
+          <li class="footer-links-item">
+            <a class="button-footer-link" href="#">
+              <svg
+                class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="15"
+                viewBox="0 0 18 15"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_24196_690)">
+                  <path
+                    d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24196_690">
+                    <rect width="18" height="15" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="invisible-element">Twitter</span>
+            </a>
+          </li>
+          <li class="footer-links-item">
+            <a class="button-footer-link" href="#">
+              <svg
+                class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="18"
+                viewBox="0 0 10 18"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_24196_688)">
+                  <path
+                    d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24196_688">
+                    <rect width="10" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="invisible-element">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-links-item">
+            <a class="button-footer-link" href="#">
+              <svg
+                class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_24196_686)">
+                  <path
+                    d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24196_686">
+                    <rect width="20" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="invisible-element">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-number" href="tel:88128121212"
+          ><p class="number-value">+7 (812) 812-12-12</p></a
+        >
+        <a class="footer-logo" href="№">
+          <svg
+            class="academy-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="115"
+            height="34"
+            viewBox="0 0 115 34"
+            fill="none"
+          >
+            <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
+            <path
+              d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"
+            />
+            <path
+              d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"
+            />
+            <path
+              d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"
+            />
+            <path
+              d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
+            />
+            <path
+              d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"
+            />
+            <path
+              d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"
+            />
+            <path
+              d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"
+            />
+            <path
+              d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"
+            />
+            <path
+              d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"
+            />
+            <path
+              d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"
+            />
+            <path
+              d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
+            />
+          </svg>
+        </a>
+      </section>
+    </footer>
+    <div class="modal-container no-display-modal">
+      <div class="modal-window">
+        <button class="close" type="button">
+          <svg
+            class="svg-close"
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 13 13"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_18711_342)">
+              <path
+                d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_18711_342">
+                <rect width="13" height="13" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="#" method="post">
+          <fieldset class="modal-date-inout">
+            <span class="date">Дата заезда:</span>
+            <input class="modal-date-inout-input" type="date" name="data" />
+          </fieldset>
+          <fieldset class="modal-date-inout">
+            <span class="date">Дата выезда:</span>
+            <input class="modal-date-inout-input" type="date" name="data" />
+          </fieldset>
+          <div class="modal-quantity-family-members">
+            <fieldset class="modal-quantity-parent">
+              <span>Взрослые:</span>
+              <div class="quantity-container">
+                <button
+                  id="parent-minus"
+                  type="button"
+                  class="quantity-button quantity-button-minus"
+                >
+                  <svg
+                    class="svg-minus"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="1"
+                    viewBox="0 0 13 1"
+                    fill="none"
+                  >
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                  </svg>
+                </button>
+                <input
+                  id="parents"
+                  class="quantity-men"
+                  type="number"
+                  name="parent"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button
+                  id="parent-plus"
+                  type="button"
+                  class="quantity-button quantity-button-plus"
+                >
+                  <svg
+                    class="svg-plus"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
+                    <g opacity="0.3" clip-path="url(#clip0_18711_304)">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_18711_304">
+                        <rect width="13" height="13" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
             </fieldset>
-            <fieldset class="modal-date-inout">
-              <span class="date">Дата выезда:</span>
-              <input class="modal-date-inout-input" type="date" name="data">
-            </fieldset>
-            <div class="modal-quantity-family-members">
-              <fieldset class="modal-quantity-parent">
-                <span>Взрослые:</span>
-                <div class="quantity-container">
-                  <button id="parent-minus" type="button" class="quantity-button quantity-button-minus">
-                    <svg class="svg-minus" xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                    </svg>
-                  </button>
-                  <input id="parents" class="quantity-men" type="number" name="parent" value="1" min="1" max="10">
-                  <button id="parent-plus" type="button" class="quantity-button quantity-button-plus">
-                    <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <g opacity="0.3" clip-path="url(#clip0_18711_304)">
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+            <fieldset class="modal-quantity-children">
+              <span>Дети</span>
+              <button type="button" class="children-info">
+                <div class="black-plate-info black-plate-info-show">
+                  Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="9"
+                      viewBox="0 0 19 9"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_18711_285)">
+                        <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333" />
                       </g>
                       <defs>
-                      <clipPath id="clip0_18711_304">
-                      <rect width="13" height="13" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                </div>
-              </fieldset>
-              <fieldset class="modal-quantity-children">
-                <span>Дети</span>
-                <button type="button" class="children-info">
-                  <div class="black-plate-info black-plate-info-show">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="9" viewBox="0 0 19 9" fill="none">
-                        <g clip-path="url(#clip0_18711_285)">
-                        <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333"/>
-                        </g>
-                        <defs>
                         <clipPath id="clip0_18711_285">
-                        <rect width="19" height="9" fill="white"/>
+                          <rect width="19" height="9" fill="white" />
                         </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="9" viewBox="0 0 1 9" fill="none">
-                    <g clip-path="url(#clip0_18711_289)">
-                    <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
-                    <path d="M1 0H0V1H1V0Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_18711_289">
-                    <rect width="1" height="9" fill="white"/>
-                    </clipPath>
-                    </defs>
+                      </defs>
                     </svg>
+                  </div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1"
+                  height="9"
+                  viewBox="0 0 1 9"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_18711_289)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                    <path d="M1 0H0V1H1V0Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_18711_289">
+                      <rect width="1" height="9" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="quantity-container">
+                <button
+                  id="child-minus"
+                  type="button"
+                  class="quantity-button quantity-button-plus"
+                >
+                  <svg
+                    class="svg-minus"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="1"
+                    viewBox="0 0 13 1"
+                    fill="none"
+                  >
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
+                  </svg>
                 </button>
-                <div class="quantity-container">
-                  <button id="child-minus" type="button" class="quantity-button quantity-button-plus"> <svg class="svg-minus" xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
-                    </svg></button>
-                  <input id="child" class="quantity-men" type="number" name="children" value="0">
-                  <button id="child-plus" type="button" class="quantity-button quantity-button-minus" ><svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                <input
+                  id="child"
+                  class="quantity-men"
+                  type="number"
+                  name="children"
+                  value="0"
+                />
+                <button
+                  id="child-plus"
+                  type="button"
+                  class="quantity-button quantity-button-minus"
+                >
+                  <svg
+                    class="svg-plus"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                  >
                     <g opacity="0.3" clip-path="url(#clip0_18711_304)">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                     </g>
                     <defs>
-                    <clipPath id="clip0_18711_304">
-                    <rect width="13" height="13" fill="white"/>
-                    </clipPath>
+                      <clipPath id="clip0_18711_304">
+                        <rect width="13" height="13" fill="white" />
+                      </clipPath>
                     </defs>
-                    </svg></button>
-                </div>
-              </fieldset>
-            </div>
-            <button class="modal-form-submit-button btn-card-style-favorit" style="width: 575px;" type="button">Найти</button>
-          </form>
-
-        </div>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            class="modal-form-submit-button btn-card-style-favorit"
+            style="width: 575px"
+            type="button"
+          >
+            Найти
+          </button>
+        </form>
       </div>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>
